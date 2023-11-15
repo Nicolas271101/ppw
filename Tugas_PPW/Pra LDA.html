@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Indra Ramadan Fadilafani (200411100158)</title>
+    <title>Pra LDA &#8212; Indra Ramadan Fadilafani (200411100158)</title>
   
   
   
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas_PPW/Pra LDA';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Klasifikasi" href="LDA.html" />
+    <link rel="next" title="LDA" href="LDA.html" />
     <link rel="prev" title="Pertemuan 1" href="Pertemuan%201.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -168,15 +168,18 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Kumpulan Tugas PPW</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Crawling%20Data%20PTA.html"><strong>Crawling Data PTA</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Pertemuan%201.html"><strong>Pertemuan 1</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="LDA.html"><strong>Klasifikasi</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="word2vec.html"><strong>Load Data</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="UTS%20PPW.html"><strong>SCRAPPING DATA</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Pra LDA</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="LDA.html"><strong>LDA</strong></a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="word2vec.html"><strong>Word2vec</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS%20PPW.html"><strong>Sebelum Streamlit</strong></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Tugas%20Crawling%20Berita%20Online.html"><strong>Crawling Berita Online</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Berita%20Online1.html"><strong>Crawling &amp; Ekstraksi Kalimat dari Berita Online</strong></a></li>
 
 
@@ -383,9 +386,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -396,19 +397,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Pra LDA</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -418,7 +411,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="pra-lda">
+<h1><strong>Pra LDA</strong><a class="headerlink" href="#pra-lda" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
@@ -432,7 +427,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8b3dd924-5156-4041-a136-7546fbc0969d" class="colab-df-container">
+  <div id="df-7a2f4c50-19cd-4567-8170-be4d39351fa6" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -487,7 +482,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8b3dd924-5156-4041-a136-7546fbc0969d')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-7a2f4c50-19cd-4567-8170-be4d39351fa6')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -539,12 +534,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8b3dd924-5156-4041-a136-7546fbc0969d button.colab-df-convert');
+        document.querySelector('#df-7a2f4c50-19cd-4567-8170-be4d39351fa6 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8b3dd924-5156-4041-a136-7546fbc0969d');
+        const element = document.querySelector('#df-7a2f4c50-19cd-4567-8170-be4d39351fa6');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -5550,6 +5545,7 @@ You can now load the package via spacy.load(&#39;en_core_web_sm&#39;)
   </div>
 </div></div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -5595,7 +5591,7 @@ You can now load the package via spacy.load(&#39;en_core_web_sm&#39;)
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Klasifikasi</strong></p>
+        <p class="prev-next-title"><strong>LDA</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -5605,20 +5601,6 @@ You can now load the package via spacy.load(&#39;en_core_web_sm&#39;)
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

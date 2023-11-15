@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Klasifikasi &#8212; Indra Ramadan Fadilafani (200411100158)</title>
+    <title>LDA &#8212; Indra Ramadan Fadilafani (200411100158)</title>
   
   
   
@@ -65,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas_PPW/LDA';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Load Data" href="word2vec.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Pra%20LDA.html" />
+    <link rel="next" title="Word2vec" href="word2vec.html" />
+    <link rel="prev" title="Pra LDA" href="Pra%20LDA.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,10 +173,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Crawling%20Data%20PTA.html"><strong>Crawling Data PTA</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Pertemuan%201.html"><strong>Pertemuan 1</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Klasifikasi</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="word2vec.html"><strong>Load Data</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="UTS%20PPW.html"><strong>SCRAPPING DATA</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pra%20LDA.html"><strong>Pra LDA</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>LDA</strong></a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="word2vec.html"><strong>Word2vec</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS%20PPW.html"><strong>Sebelum Streamlit</strong></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Tugas%20Crawling%20Berita%20Online.html"><strong>Crawling Berita Online</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Berita%20Online1.html"><strong>Crawling &amp; Ekstraksi Kalimat dari Berita Online</strong></a></li>
 
 
@@ -396,7 +399,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Klasifikasi</h1>
+    <h1>LDA</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -406,11 +409,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>LDA</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi"><strong>Klasifikasi</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#svm">SVM</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi-model">Evaluasi Model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimasi-model">Optimasi Model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gatau">Gatau</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -421,7 +429,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="lda">
+<h1><strong>LDA</strong><a class="headerlink" href="#lda" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
 <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
@@ -3917,6 +3927,7 @@ document.write(`
   </div>
 </div></div>
 </div>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="klasifikasi">
 <h1><strong>Klasifikasi</strong><a class="headerlink" href="#klasifikasi" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
@@ -5331,7 +5342,7 @@ weighted avg       0.96      0.96      0.96       183
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title"><strong>Pra LDA</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -5339,7 +5350,7 @@ weighted avg       0.96      0.96      0.96       183
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Load Data</strong></p>
+        <p class="prev-next-title"><strong>Word2vec</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -5358,11 +5369,16 @@ weighted avg       0.96      0.96      0.96       183
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>LDA</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi"><strong>Klasifikasi</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#svm">SVM</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi-model">Evaluasi Model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimasi-model">Optimasi Model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gatau">Gatau</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
